@@ -24,10 +24,7 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Issues
                 </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" class="list"></a></li>
-                  <li><a class="dropdown-item" class="list"></a></li>
-                  <li><a class="dropdown-item" class="list"></a></li>
+                <ul class="dropdown-menu dropdown-menu-dark" id="list">
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -52,10 +49,13 @@
         </div>
     </nav>
     <div class="container-fluid">
+
       <!-- Main component for a primary marketing message or call to action -->
       <div class="row clearfix">
+        <div class="col-md-9">
           <div class="jumbotron" id="title"><h1>Sentences</h1> </div>
           <div id="file"></div>
+        </div>
       </div>	
     </div> <!-- /container -->
     <!-- Bootstrap core JavaScript
@@ -74,7 +74,7 @@
 				success: function(d) {
 					for (var i=0; i<d.length; i++) {
 						var li = `<li><a href='#' onclick='load("`+d[i].url+`")'>`+d[i].label+`</a></li>`
-						$('.list').append(li)
+						$('#list').append(li)
 					}	
 				},
 				error: function() {
