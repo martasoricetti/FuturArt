@@ -63,18 +63,6 @@
               </ul>
             </div>
           </div>
-          <div class="row clearfix mt-4">
-            <div class="col-md-12">
-              <form role="form">
-                <div class="checkbox"><label>
-                  <input type="checkbox" id="showasides" class="show">Show asides</label></div>
-                <div class="checkbox"><label>
-                  <input type="checkbox" id="showspeeches" class="show">Show speeches</label></div>
-                <div class="checkbox"><label>
-                  <input type="checkbox" id="showquotes" class="show">Show quotes</label></div>
-              </form>
-            </div>
-          </div>
         </div>		
         <div class="col-md-9">
           <div class="jumbotron" id="title"><h1>Sentences</h1> </div>
@@ -106,25 +94,6 @@
 				}
 			});
 			
-			
-			$('#showasides').click(function() {
-				if (this.checked) 
-					$('.aside').addClass('text-aside')
-				else
-					$('.aside').removeClass('text-aside')
-			})
-			$('#showspeeches').click(function() {
-				if (this.checked) 
-					$('q.speech').addClass('text-speeches')
-				else
-					$('q.speech').removeClass('text-speeches')
-			})
-			$('#showquotes').change(function() {
-				if (this.checked) 
-					$('q:not(.speech)').addClass('text-quotes')
-				else
-					$('q:not(speech)').removeClass('text-quotes')
-			})
 		}
 		
 		function load(file) {
