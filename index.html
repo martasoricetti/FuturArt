@@ -24,7 +24,10 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Issues
                 </a>
-                <ul class="dropdown-menu dropdown-menu-dark" id="list">
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" class="list"></a></li>
+                  <li><a class="dropdown-item" class="list"></a></li>
+                  <li><a class="dropdown-item" class="list"></a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -71,7 +74,7 @@
 				success: function(d) {
 					for (var i=0; i<d.length; i++) {
 						var li = `<li><a href='#' onclick='load("`+d[i].url+`")'>`+d[i].label+`</a></li>`
-						$('#list').append(li)
+						$('.list').append(li)
 					}	
 				},
 				error: function() {
