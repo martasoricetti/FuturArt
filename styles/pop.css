@@ -1,0 +1,119 @@
+
+body {
+    font-family: VTC Letterer Pro;
+    font-size: 15pt;  /* For full-size comic books (6.625” x 10.187” trim), most creators use a 9.5 or 10-point size.*/
+    text-align: justify;
+    background-image: url("images/comics_background.jpg");
+    background-size: 100% ;
+}
+
+body h1, body h3 {
+	font-family:BadaBoom BB;
+	text-align: center;
+	font-weight: 400;
+	letter-spacing: 4pt;
+}
+
+body h4 {
+    font-family:BadaBoom BB;
+    font-weight: 400;
+	letter-spacing: 4pt;
+}
+body h1 {
+	font-size: 50pt;
+    text-shadow: rgb(227 6 19 / 80%) -4.9px 3.32981px, rgb(255 237 0) -3.26667px 8.8795px, rgb(3 37 126 / 80%) 3.32981px -4.9px;
+}
+
+body h3 {
+	font-size: 35pt;
+}
+
+body h4 {
+    font-size: 20pt;
+}
+
+
+#text-content {
+    padding: 4%;
+    padding-top: 8%;
+    text-align: justify; 
+    background-color: white;
+}
+
+.indent {
+    text-indent: 2%;
+}
+#text-content img {
+    display: block;
+    width:200vh;
+    margin-left: auto; 
+    margin-right: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+/*comic cloud */
+.footnote {
+	position: relative;
+	width: 10%;
+	text-align: center;
+	line-height: 1.4em;
+	margin: 40px auto;
+	background-color: #fff;
+	border: 8px solid #333;
+	border-radius: 30px;
+	padding: 20px;
+	font-size: large;
+}
+span.footnote {
+	width: 300px;
+	border-radius: 200px;
+	padding: 30px;
+}
+
+span.footnote:before,
+span.footnote:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: 10px;
+	bottom: -30px;
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border: 8px solid #333;
+	-webkit-border-radius: 28px;
+	-moz-border-radius: 28px;
+	border-radius: 28px;
+}
+
+span.footnote:after {
+	width: 20px;
+	height: 20px;
+	left: 5px;
+	bottom: -40px;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+}
+
+/*buttons*/
+sup button {
+	font-family: VTC Letterer Pro;
+	font-size:25px;
+	width:50px;
+	height: 20px;
+	background-color: yellow;
+	box-shadow: 5px 5px #333;
+	cursor: pointer;
+
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #669999;
+    text-align: center;
+}
