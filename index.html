@@ -95,7 +95,7 @@
       <!-- Main component for a primary marketing message or call to action -->
       <div class="row clearfix">
         <div class="col-md-9">
-          <div class="jumbotron" id="title"></div>
+          <div class="jumbotron"></div>
           <div id="file"></div>
         </div>
       </div>	
@@ -159,7 +159,6 @@
 				url: file,
 				success: function(d) {
 					$('#file').html(d)
-					$('#title').html($('#file h1'))
           $('#carousel').remove()
 					$('.show').prop("checked", false)
 				},
