@@ -1,3 +1,4 @@
+/*CAROUSEL*/
 .carousel-item {
     height: 65vh;
     min-height: 350px;
@@ -24,20 +25,20 @@
   height: 100%;
 }
 .fab-container:hover .sub-button:nth-child(2) {
-  transform: translateY(-14vh);
+  transform: translateY(-20vh);
 }
 .fab-container:hover .sub-button:nth-child(3) {
-  transform: translateY(-28vh);
+  transform: translateY(-40vh);
 }
 .fab-container:hover .sub-button:nth-child(4) {
   bottom: 1vh;
-  transform: translateX(-12vh);
+  transform: translateX(-17vh);
 }
 
 .fab-container .fab {
   position: relative;
-  height: 15vh;
-  width: 15vh;
+  height: 17vh;
+  width: 17vh;
   border-radius: 50%;
   z-index: 2;
 }
@@ -46,8 +47,8 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 6vh;
-  width: 6vh;
+  height: 8vh;
+  width: 7vh;
   background-color:inherit;
   border-radius: 0 0 10px 0;
   z-index: -1;
@@ -68,8 +69,8 @@
   justify-content: center;
   bottom: 0;
   right: 0;
-  height: 15vh;
-  width: 15vh;
+  height: 17vh;
+  width: 17vh;
   border-radius: 50%;
   transition: all 0.3s ease;
 }
@@ -80,61 +81,33 @@
   padding-top: 6px;
 }
 
-.fab-content{
-    background: url("/icons/fb-white.png");
-    background-size: 8vh;
-    background-repeat: no-repeat;
-    background-position: center center !important;
+.fab-content img{
+    height: 12vh;
 }
 
-.sub-button:nth-child(2){
-    background: url("/icons/ren-white.png");
-    background-size: 8vh;
-    background-repeat: no-repeat;
-    background-position: center;
+.sub-button:nth-child(3) img {
+    height: 10vh;
 }
 
-.sub-button:nth-child(3){
-    background: url("/icons/anouv-w.png");
-    background-size: 5vh;
-    background-repeat: no-repeat;
-    background-position: center;
+
+
+.sub-button:nth-child(4) img{
+    height: 8vh !important;
 }
 
 
 .sub-button:nth-child(4){
-    background: url("/icons/default-icon.png");
-    background-size: 5vh !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-size: 6vh;
-    text-decoration: none !important;
-    height: 8vh !important;
-    width: 8vh !important;
+    height: 10vh !important;
+    width: 10vh !important;
     right: 3vh !important;
 }
+
 .fab-container:hover .sub-button:nth-child(4):hover{
-    background-color: #83c0cf !important;
+    background-color: #97cfa9 !important;
 }
   
-/*FAB*/
-
-.fab-container .fab{
-  height: 12vh;
-  width: 12vh;
-}
-
-.fab-container .sub-button{
-  height: 10vh;
-  width: 10vh;
-  bottom: 0;
-  right: 6px;
-}
-.fab-container:hover {
-  height: 100%;
-}
 
 .fab-content, .fab-shadow, .sub-button, .fab{
-  background-color: #369656 !important;
+  background-color: #369656;
 }
 
