@@ -3,6 +3,10 @@
     text-align: justify;
 }
 
+.clearfix{
+    padding:4%;
+}
+
 .indent {
     text-indent: 2%;
 }
