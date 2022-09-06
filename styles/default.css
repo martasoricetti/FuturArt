@@ -1,0 +1,12 @@
+#text-content {
+    padding: 4%;
+    text-align: justify;
+}
+
+.indent {
+    text-indent: 2%;
+}
+
+#text-content img {
+    width: 200vh;
+}
