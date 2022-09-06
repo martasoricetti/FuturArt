@@ -3,7 +3,9 @@
     <head>
         <title>FuturArt</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link href="styles/default.css" rel="stylesheet">
         <meta charset="UTF-8">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
@@ -33,7 +35,7 @@
             objects, different other industries, especially those involved with the production of digital content such as music
             or video, are experimenting with the technology. Overall, in the first four months of 2021, the NFT volume has
             exceeded 2 billion USD, ten times more than the entire NFT trading volume in 2020 <sup>2</sup>.</p>
-            <p>So, what’s an NFT? An NFT is a unit of data stored on a blockchain that certifies a digital asset to be unique
+            <p class="indent">So, what’s an NFT? An NFT is a unit of data stored on a blockchain that certifies a digital asset to be unique
             and therefore not interchangeable, while offering a unique digital certificate of ownership for the NFT<sup>3</sup>.
             More broadly, an NFT allows to establish the “provenance” of the assigned digital object, offering indisputable answers
             to such questions as who owns, previously owned, and created the NFT, as well as which of the many copies is
@@ -41,7 +43,7 @@
             NFTs are now being used to commodify digital objects in different contexts, such as art, gaming, and sports
             collectibles. Originally NFTs were part of the Ethereum blockchain but increasingly more blockchains have
             implemented their own versions of NFTs <sup>4</sup>.</p>
-            <p>The first popular example of NFTs is CryptoKitties, a collection of artistic images representing virtual cats
+            <p class="indent">The first popular example of NFTs is CryptoKitties, a collection of artistic images representing virtual cats
             that are used in a game on Ethereum that allows players to purchase, collect, breed, and sell them on Ethereum <sup>5</sup>.
             In December 2017, CryptoKitties congested the Ethereum network <sup>6</sup>. By many considered a chief example of the
             irrationality driving the cryptocurrency market in 2017 <sup>7</sup>, CryptoKitties remained the only popular example of
@@ -53,7 +55,7 @@
             million dollars; and the Auction Winner Picks Name, an NFT with music video and dance track, sold at $1.33
             million dollars. The profitability of NFTs has motivated celebrities to create their own NFTs, with collectibles of
             NBA and famous football players getting sold for hundreds of thousands dollars <sup>12</sup>.</p>
-            <p>Research on NFTs is still limited, and focuses mostly on technical aspects, such as copyright regulations <sup>3</sup>;
+            <p class="indent">Research on NFTs is still limited, and focuses mostly on technical aspects, such as copyright regulations <sup>3</sup>;
             components, protocols, standards, and desired properties <sup>13</sup>; new blockchain-based protocols to trace physical
             goods <sup>14</sup>; and the implications that NFTs have on the art world <sup>15, 16</sup>, in particular as they allow to share 
             secondary sale royalties with the artist. Empirical studies aiming at characterizing properties of the market have focused
@@ -63,14 +65,14 @@
             and that, even if NFT prices are driven by the prices of cryptocurrencies <sup>19</sup>, the NFT market could be prone to speculation <sup>18, 20</sup>.
             Further, it was shown that NFTs valued by experts are more successful <sup>21</sup>, and that, based on 16,000 NFTs sold on the SuperRare market, the
             structure of the the NFT co-ownership network is highly centralized, and small-world-like <sup>22, 23</sup>.</p>
-            <p>In this paper, we provide a first comprehensive quantitative overview of the NFT market. To this end, we analyse
+            <p class="indent">In this paper, we provide a first comprehensive quantitative overview of the NFT market. To this end, we analyse
             a large dataset including 6.1 million trades of 4.7 million NFTs in 160 cryptocurrencies, primarly Ethereum
             and WAX, and covering the period between June 23, 2017 and April 27, 2021. We start by analysing the overall
             statistical properties of the NFT market and its evolution over time. Then, we study the network of interactions
             between NFT traders, and the network of NFT assets. NFTs are further clustered based on their visual features.
             Finally, we present the results of regression and classification models predicting the occurrence of NFT secondary
             sales and their price.</p>
-            <p>We break down our analysis by NFT categories, which are classified by manual inspection, with references
+            <p class="indent">We break down our analysis by NFT categories, which are classified by manual inspection, with references
             to the classification proposed by NonFungible Corporation <sup>24</sup>, a specialized company that track NFTs sales,
             and OpenSea <sup>25</sup>, one of the largest NFT marketplace. However, the exact classification of different categories in
             which NFTs are used is outside of the scope of the present paper. For example, <em>Art</em> objects can be in some cases
@@ -95,12 +97,12 @@
                 cards, to selections of art masterpieces, to virtual spaces in online games. Most collections can be categorised in
                 six categories: <em>Art</em>, <em>Collectible</em>, <em>Games</em>, <em>Metaverse</em>, <em>Other</em>, and <em>Utility</em> (see also “SI”). We show the top 5 collections
                 in terms of number of unique assets (<em>n</em>) for each category (see Fig. 1a).</p>
-                <p>Following an initial rapid growth in late 2017, when CryptoKitties collection gained worldwide popularity,
+                <p class="indent">Following an initial rapid growth in late 2017, when CryptoKitties collection gained worldwide popularity,
                 the size of the NFT market has remained substantially stable until mid 2020, with an average of <span>&#126;</span> 60 000 US
                 dollars traded daily (see Fig. 1b). Starting from July 2020, the market has experienced a dramatic growth, with
                 the total volume exchanged daily surpassing <span>&#126;</span> 10 million US dollars in March 2021, thus becoming 150 times
                 larger than it was 8 months earlier.</p>
-                <p>We measured to what extent different NFTs categories contribute to the size of the whole NFT market. Until
+                <p class="indent">We measured to what extent different NFTs categories contribute to the size of the whole NFT market. Until
                 the end of 2018, the market was fully dominated by the <em>Art</em> category, and in particular by the CryptoKitties collection.
                 From January 2019, other categories started gaining popularity, both in terms of total volume exchanged
                 (see Fig. 1b, c) and number of transactions (see Fig. 1d). Overall, in the period between January 2019 and July
@@ -113,7 +115,7 @@
                 related to NFTs categorized as <em>Art</em>. Overall, we observe that the share of volume spent in <em>Art</em> has been growing
                 since 2020, while its share of transactions has been decreasing (Fig. 1d). The discrepancy between volume and
                 transactions reveals that prices of items categorized as <em>Art</em> are higher, on average, compared to other categories.</p>
-                <p>We dig further into these differences by looking at the distribution of NFT prices across categories (see
+                <p class="indent">We dig further into these differences by looking at the distribution of NFT prices across categories (see
                 Fig. 2a), which we find to be broadly distributed. We observe that the average sale price of NFTs is lower than 15
                 dollars for 75% of the assets, and larger than 1594 dollars, for 1% of the assets. Considering individual categories,
                 NFTs categorized as <em>Art</em>, <em>Metaverse</em>, and <em>Utility</em> reached higher prices compared to other categories, with the top
@@ -121,7 +123,7 @@
                 categories are different in sizes, so 1% of assets corresponds to 8593, 472, and 78 NFTs in the <em>Art</em>, <em>Metaverse</em>, and
                 <em>Utility</em> categories, respectively. The highest prices so far were reached by assets categorized as <em>Art</em>, with 4 NFTs
                 that were sold for more than 1 million dollars.</p>
-                <p>To assess the market activity, we measured how often individual assets are traded. Here, we refer to the first
+                <p class="indent">To assess the market activity, we measured how often individual assets are traded. Here, we refer to the first
                 time an asset is sold as the asset’s <em>primary sale</em>, and to all other sales as <em>secondary sales</em>. All assets considered
                 in this study had a primary sale, but only <span>&#126;</span> 20% of them had a secondary sale (see “SI”). We observe that the
                 tail of the distribution of number of sales <em>s</em> per asset, for <em>s</em> >= 10 , is well characterized by a power-law function
@@ -133,7 +135,7 @@
                 Also, the size of collections <em>n</em> is well described by a power-law function <em>P(n)</em> <span>&#126;</span> <em>n <sup>&alpha;</sup></em>, with &alpha; = −1.5 (see Fig. 2c),
                 implying the distribution of sizes is broad. We find that <span>&#126;</span> 75% of collections comprise less than 37 unique assets,
                 and <span>&#126;</span> 1% have more than 10,400 unique assets.</p>
-                <p>Temporal patterns of secondary sales are unique for each collection, as evidenced by considering the top collection
+                <p class="indent">Temporal patterns of secondary sales are unique for each collection, as evidenced by considering the top collection
                 in each category (see Fig. 3). For example, when Cryptokitties emerged in 2017, secondary sale prices were
                 typically lower than the price of their first sale. More recently in 2021, instead, their secondary sale prices have
                 gone up because of an increase in the number of potential customers. Other collections, like Alien, alternated
@@ -167,7 +169,7 @@
                 We consider the <em>network of trades</em>, where nodes are traders, a directed link from a trader to another exists if the former (the buyer) purchases at least one
                 NFT from the latter (the seller). Each link has a weight corresponding to the total number of items that the buyer
                 bought from the seller.</p>
-                <p>First, we study the behaviour of individual NFT traders by focusing on properties of the nodes. We find that
+                <p class="indent">First, we study the behaviour of individual NFT traders by focusing on properties of the nodes. We find that
                 traders activity is highly heterogeneous: the strength of traders (nodes) <em>s</em>, defined as the total number of purchases
                 and sales made by each trader, is distributed as a power law <em>P(s)</em> <span>&#126;</span> <em>s <sup>&lambda;<sub>1</sub></sup></em> with exponent <em>&lambda;<sub>1</sub></em> = −1.85 (see Fig. 4a),
                 such that the top 10% of traders alone perform 85% of all transactions and trade at least once 97% of all assets.
@@ -180,7 +182,7 @@
                 transactions (see Fig. 4c). A specialized trader is the one with Ethereum address “0xfc624f8f58db41bdb95aedee1de3c1cf047105f1”,
                 that exchanges tens of thousands of CryptoKitties. Similar relationships hold when buying
                 and selling behaviours are considered separately (see “SI”).</p>
-                <p>Secondly, we turn to properties of the network links, describing interactions between pairs of traders. We
+                <p class="indent">Secondly, we turn to properties of the network links, describing interactions between pairs of traders. We
                 find that the distribution of link weights is well characterized by a power law distribution, with the top 10% of
                 buyer–seller pairs contributing to the total number of transactions as much as the remaining 90% (see “SI”). An
                 interesting question is whether traders connect preferentially to traders that have similar strength. We tackle this
@@ -197,7 +199,7 @@
                 <hr>
                 is close to the null value zero, implying that traders do not connect to other traders based on the similarity of
                 their connection patterns.</p>
-                <p>Finally, we focus on the network structure. Building upon the result that traders are specialized, we assign
+                <p class="indent">Finally, we focus on the network structure. Building upon the result that traders are specialized, we assign
                 each trader to their top collection, and we study the modularity<sup>29</sup>
                 of the network under this partition of nodes.
                 The modularity is a metric bounded between −0.5 and 1, which is positive when the density of links among
@@ -206,21 +208,21 @@
                 Q = 0.0823 ± 0.0001 (see “SI”). It reveals that the collections well represent the underlining network structure,
                 where traders specialized in a collection tends to buy and sell NFTs with other traders specialized in the same
                 collection.</p>
-                <p>We now turn to the exploration of how NFTs are connected to one another. To this end, we construct the
+                <p class="indent">We now turn to the exploration of how NFTs are connected to one another. To this end, we construct the
                 network of NFTs, where nodes are NFTs and a directed link exists between two NFTs that are purchased “in
                 sequence”, e.g. a link is created from an NFT to another when a buyer purchases the former and then the latter,
                 with no purchases between the two (see “SI” for more details). Rather than linking all NFTs ever traded by the
                 same trader, this choice allows to understand the relations between NFT that are semantically similar, because
                 they are bought by the same trader in approximately the same period of time. Further, it ensures that the network
                 structure is not dominated by large cliques.</p>
-                <p>The distribution of NFTs strength decays as a power law with exponent <em>&lambda;<sub>3</sub></em> = −3.21 (see Fig. 4d). Note that
+                <p class="indent">The distribution of NFTs strength decays as a power law with exponent <em>&lambda;<sub>3</sub></em> = −3.21 (see Fig. 4d). Note that
                 the strength of NFTs is different to the total number of sales per NFT (previously shown in Fig. 2b), due to how
                 the network is constructed. In fact, when two NFTs are purchased simultaneously, this creates two links for each
                 of the two nodes (one ingoing and one outgoing). The next question we ask is: which NFTs are connected to one
                 another? We find that NFTs in small collections tend to be bought in sequence with NFTs in other collections
                 (see Fig. 4e). On the contrary, NFTs in large collections, like CryptoKitties or Gods-Unchained, tend to be bought
                 in sequence with NFTs in the same collection.</p>
-                <p>What are the implications of this behaviour on the NFT network structure? We investigate the relation
+                <p class="indent">What are the implications of this behaviour on the NFT network structure? We investigate the relation
                 between the structure of the NFT network and NFTs collections, by studying the modularity<sup>29</sup>
                 of the network
                 under the partition of NFTs (nodes) into NFT collections. We find that the modularity Q of the collections
@@ -235,7 +237,7 @@
                 all NFTs (see Fig. 4f). While the high network modularity reveals that traders tend to purchase assets from the
                 same collection in sequence, the presence of very large SCCs reveals that there are less frequent sequences of
                 purchases in different collections.</p>
-                <p>A visual representation of the trader network including the Art category on February 2021 shows the clusters
+                <p class="indent">A visual representation of the trader network including the Art category on February 2021 shows the clusters
                 formed by NFT traders specialized in the same collection (see Fig. 5a). Similarly, the same visualization for the
                 <img src="articles/images/5_article1.png" alt="networks visualization">
                 <p><strong>Figure 5. Networks visualization. (a)</strong> Trader network, where nodes represent traders and links sales between
@@ -245,7 +247,7 @@
                 <hr>
                 NFT network shows a similar trend, where NFTs, albeit surrounded by other NFTs in the same collection, tend
                 to form a sparser structure (see Fig. 5b).</p>
-                <p>We then study the networks consisting of assets in the same category and blockchain (see “SI”). We find that
+                <p class="indent">We then study the networks consisting of assets in the same category and blockchain (see “SI”). We find that
                 key results presented above, including the shape of the strength distributions, hold across categories. Also in this
                 case, we find that traders, independently from the category considered, are specialized: the fraction of individual
                 trades in the top collection is included between 59%, for the <em>Other</em> category, and 98%, for the <em>Utility</em> category.
@@ -264,7 +266,7 @@
                 quantify the visual difference between pairs of pictures, we calculated the cosine distance (CD) between them, a
                 value that goes from zero (for identical images) to one (for highly different images). We measured such distance
                 between pictures within the same collection and across collections.</p>
-                <p>The average CD calculated between items which belong to the same collection is significantly lower ( <em>&micro;</em> = 0.59 ,
+                <p class="indent">The average CD calculated between items which belong to the same collection is significantly lower ( <em>&micro;</em> = 0.59 ,
                 <em>&sigma;</em> = 0.20 ) compared to the one obtained for objects from two different collections ( <em>&micro;</em> = 0.87 , <em>&sigma;</em> = 0.06 ), confirming
                 an intra-collection graphical homogeneity. Figure 6a shows the matrix of average CD values between all
                 pairs of collections. Values on the diagonal represent the intra-collection CD values, and reveal that most collections
@@ -274,7 +276,7 @@
                 (coloured band in Fig. 6a), which share some common visual features. This is the case for collections containing
                 pieces of pixel-art, including Chubbie, Cryptopunks and Wrapped Punks, or the similarities observed between
                 Cryptokitties and Axie.</p>
-                <p>To map the images into a lower-dimensional feature space that can be used in practice for prediction and visualization,
+                <p class="indent">To map the images into a lower-dimensional feature space that can be used in practice for prediction and visualization,
                 we apply Principal Component Analysis (PCA) to the AlexNet vectors. PCA uses linear combinations
                 of the 4096-dimensional vectors to project them into vectors with an arbitrarily lower number of dimensions
                 and such that the variance of datapoints in the projected space is maximized. Considering the whole sample,
@@ -310,7 +312,7 @@
                 ( <em>K<sub>buyer|seller</sub></em>, <em>PR<sub>buyer|seller</sub></em>) , the principal components of visual features of the object linked to the NFT ( <em>vis<sub>PCA1...5</sub></em> ),
                 a prior probability of sale within the collection ( <em>p<sub>resale</sub></em> ), and the past median price of primary and secondary
                 sales within the collection (<em>median price</em> ).</p>
-                <p>NFT’s price correlates strongly with the price of NFTs previously sold within the same collection (see “SI”).
+                <p class="indent">NFT’s price correlates strongly with the price of NFTs previously sold within the same collection (see “SI”).
                 The median sale price of NFTs in the collection predicts more than half of the variance of price of future primary
                 and secondary sales. The prediction is more accurate when the median of the past sale price is calculated over a
                 recent time window preceding the primary sale, e.g., the prior time window of one week is better than considering
@@ -321,7 +323,7 @@
                 the median secondary sale price over the next week, and falls to <em>R <sup>2</sup><sub>adj</sub></em> = 0.77 when extending the prediction over
                 the next 2 years (see “SI”). A similar relation is found between the secondary sale price and the median price of
                 the NFTs collection (see “SI”).</p>
-                <p>Other features than prior sale history are predictive of future primary sale price (see Fig. 7a) and
+                <p class="indent">Other features than prior sale history are predictive of future primary sale price (see Fig. 7a) and
                 median secondary sale price (see Fig. 7b). Centrality measures of the buyer and seller in the trader network
                 ( <em>R <sup>2</sup><sub>adj</sub></em> &isin; [0.05, 0.12] ) and visual features of the object linked to the NFT ( <em>R <sup>2</sup><sub>adj</sub></em> &isin; [0, 0.08] ) explain roughly one-fifth
                 to one-fourth of the variance when used in combination ( <em>R <sup>2</sup><sub>adj</sub></em> &isin; [0.18, 0.25] ). When considered in combination
@@ -338,7 +340,7 @@
                 of visual features by more than 50%. Regression coefficients of individual features for the task of secondary sale
                 price prediction one month after the primary sale are presented in Table 1.
                 </p>
-                <p>
+                <p class="indent">
                 When predicting secondary sale prices, we consider only those NFTs that were sold in a secondary sale. These
                 NFTs are the minority: less than 10% are sold at least once within one week after the primary sale, and only about
                 22% within 1 year (see “SI”). Using the same set of features that we selected for the price regression, we trained
@@ -535,7 +537,7 @@
                 explained by the model. The p-values of all <em>&beta;</em> coefficients are < 0.01 except for those marked with <sup>•</sup> , which are
                 all > 0.05.</p>
                 <hr>
-                <p>It is important to highlight the main limitations of our study, which represent also directions for future work.
+                <p class="indent">It is important to highlight the main limitations of our study, which represent also directions for future work.
                 First, we gathered data from a variety of online NFT marketplaces and not directly from the Ethereum or WAX
                 blockchains, so that we have likely missed a number of “independent” NFT producers. Second, we mostly adopted
                 an accepted categorisation for the NFTs, which includes a number of arbitrary decisions and could however be
@@ -548,7 +550,7 @@
                 not include information about the creator of the (digital) object associated to the NFTs. While this is due mainly
                 to the dataset, and in many cases the identity of the creator is not available or does not exist (e.g., for AI generated
                 images), it is likely that in certain contexts, and specifically for art, this can be an important aspect to consider.</p>
-                <p>Overall, NFTs are a new tool that satisfies some of the needs of creators, users, and collectors of a large class
+                <p class="indent">Overall, NFTs are a new tool that satisfies some of the needs of creators, users, and collectors of a large class
                 of digital and non-digital objects. As such, they are probably here to stay or, at least, they represent a first step
                 towards new tools to deal with property and provenance of such assets. We anticipate that our study will help
                 accelerate new research on NFT in a broad array of disciplines, including economics, law, cultural evolution, art
@@ -573,7 +575,7 @@
                 and OpenSea<sup>43</sup>.
                 With OpenSea that allows trading in multiple cryptocurrencies. We also monitored
                 the WAX blockchain, through tracking transactions in the Atomic API<sup>44</sup>.</p>
-                <p>We group NFTs into six categories: <em>Art</em> consisting of digital artworks such as images, videos, or GIFs; <em>Collectible</em>
+                <p class="indent">We group NFTs into six categories: <em>Art</em> consisting of digital artworks such as images, videos, or GIFs; <em>Collectible</em>
                 representing items of interest to collectors; <em>Games</em> including digital object used in competitive games;
                 <em>Metaverse</em> consisting of pieces of virtual worlds; <em>Utility</em> representing items having a specific function; and <em>Other</em>
                 including the remaining collections. More details on the NFT categorization are explained in “SI”. The final,
