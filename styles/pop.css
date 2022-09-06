@@ -117,3 +117,106 @@ footer {
     background-color: #669999;
     text-align: center;
 }
+
+
+/*FAB*/
+.fab-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    user-select: none;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+  }
+  .fab-container:hover {
+    height: 100%;
+  }
+  .fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-20vh);
+  }
+  .fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-40vh);
+  }
+  .fab-container:hover .sub-button:nth-child(4) {
+    bottom: 1vh;
+    transform: translateX(-17vh);
+  }
+  
+  .fab-container .fab {
+    position: relative;
+    height: 17vh;
+    width: 17vh;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  .fab-container .fab::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 8vh;
+    width: 7vh;
+    background-color:inherit;
+    border-radius: 0 0 10px 0;
+    z-index: -1;
+  }
+  .fab-container .fab .fab-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .fab-container .sub-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: 0;
+    height: 17vh;
+    width: 17vh;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  .fab-container .sub-button:hover {
+    cursor: pointer;
+  }
+  .fab-container .sub-button .material-icons {
+    padding-top: 6px;
+  }
+  
+  .fab-content img{
+      height: 12vh;
+  }
+  
+  .sub-button:nth-child(3) img {
+      height: 10vh;
+  }
+  
+  
+  
+  .sub-button:nth-child(4) img{
+      height: 8vh !important;
+  }
+  
+  
+  .sub-button:nth-child(4){
+      height: 10vh !important;
+      width: 10vh !important;
+      right: 3vh !important;
+  }
+  
+  .fab-container:hover .sub-button:nth-child(4):hover{
+      background-color: #97cfa9 !important;
+  }
+    
+  
+  .fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: #369656;
+  }
+  
