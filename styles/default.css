@@ -1,10 +1,7 @@
 #text-content {
     padding: 4%;
+    padding-top: 8%;
     text-align: justify;
-}
-
-.clearfix{
-    padding:4%;
 }
 
 .indent {
