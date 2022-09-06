@@ -4,14 +4,13 @@
     text-align: justify;
 }
 
-#text-content h1 {
-    padding: 4%;
-}
-
 .indent {
     text-indent: 2%;
 }
 
 #text-content img {
-    width: 200vh;
+    display: block;
+    width:200vh;
+    margin-left: auto; 
+    margin-right: auto;
 }
