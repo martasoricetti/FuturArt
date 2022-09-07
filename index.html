@@ -113,14 +113,12 @@
           <span class="material-icons"></span>
         </a>
       </div>
-      <div class="sub-button shadow" data-bs-toggle="popover" title="Pop Art" data-content="Pop Art" onclick="changeTheme(this.id)" href="#" id="enable-pop-art">
+      <div class="sub-button shadow" data-bs-toggle="popover" title="Pop Art" data-content="Pop Art" onclick="changeTheme(this.id); popTitle();" href="#" id="enable-pop-art">
           <span class="material-icons"><img src="icons/pop.png"> </span>
       </div>
       <div class="sub-button shadow" data-bs-toggle="popover" title="Default" data-content="Default" onclick="changeTheme(this.id)" href="#" tag="link" id="enable-default">
-          <a href="google.com" target="_blank">
             <span class="material-icons"><img src="icons/default-icon.png"></span>
-          </a>
-        </div>
+      </div>
     </div>
 
      
@@ -167,5 +165,19 @@
 		}		
 	</script>
   <script src="js/change-theme.js"></script>
+  <script>
+    jQuery(document).ready(function popTitle()
+      {$('h1').mousemove(function(e){
+        var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
+        var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
+        $('h1').css('text-shadow', +rYP/10+'px '+rXP/40+'px rgba(227,6,19,.8), '+rYP/15+'px '+rXP/15+'px rgba(255,237,0,1), '+rXP/40+'px '+rYP/10+'px rgba(3,37,126,.8)');
+      });
+      $('h3').mousemove(function(e){
+        var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
+        var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
+        $('h3').css('text-shadow', +rYP/10+'px '+rXP/40+'px rgba(227,6,19,.8), '+rYP/15+'px '+rXP/15+'px rgba(255,237,0,1), '+rXP/40+'px '+rYP/10+'px rgba(3,37,126,.8)');
+      });
+   });
+  </script>
   </body>
 </html>
