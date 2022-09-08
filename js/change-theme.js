@@ -10,3 +10,14 @@ function changeTheme(id) {
             break;
     }
   }
+function changeHome(id) {
+    const theme = document.getElementsByTagName('link')[1];
+    switch (id) {
+        case "enable-home-default":
+            theme.href = "styles/home.css";
+            break;
+        case "enable-home-pop-art":
+            theme.href = "styles/home_pop.css";
+            break;
+    }
+  }
