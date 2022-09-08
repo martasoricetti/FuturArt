@@ -1,5 +1,5 @@
 
-body {
+#text-content {
     font-family: VTC Letterer Pro;
     font-size: 10pt;  /* For full-size comic books (6.625” x 10.187” trim), most creators use a 9.5 or 10-point size.*/
     text-align: justify;
@@ -70,14 +70,6 @@ body h3 {
 
 body h4 {
     font-size: 20pt;
-}
-
-
-#text-content {
-    padding: 4%;
-    padding-top: 8%;
-    text-align: justify; 
-    background-color: white;
 }
 
 .indent {
