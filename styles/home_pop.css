@@ -1,0 +1,188 @@
+body {
+    font-family: VTC Letterer Pro;
+    font-size: 10pt;  /* For full-size comic books (6.625” x 10.187” trim), most creators use a 9.5 or 10-point size.*/
+    text-align: justify;
+    background-image: url("images/comics_background.jpg");
+    background-size: 100% ;
+}
+
+body h1, body h3 {
+	font-family:BadaBoom BB;
+	text-align: center;
+	font-weight: 400;
+	letter-spacing: 4pt;
+}
+
+body h4 {
+    font-family:BadaBoom BB;
+    font-weight: 400;
+	letter-spacing: 4pt;
+}
+body h1{
+	font-size: 50pt;
+    font-size: 5em;
+    font-weight: 900;
+    line-height: 1;
+}
+
+body h1:hover{
+  animation: text-shadow 1.5s ease-in-out infinite;
+}
+
+@keyframes text-shadow {
+    0%{  
+        transform: translateY(0) translateX(0);
+        text-shadow: 
+            0 0 0 #0000FF, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+
+    50% {  
+        transform: translateY(-0.3em) translateX(-0.5em);
+        text-shadow: 
+            -0.075em -0.075em 0 #0c2ffb, 
+            -0.145em -0.145em 0 #fb203b, 
+            -0.215em -0.215em 0 #fefc4b;
+    }
+
+    100% {  
+        transform: translateY(0) translateX(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+}
+
+
+body h3 {
+	font-size: 35pt;
+}
+
+body h4 {
+    font-size: 20pt;
+}
+
+
+/*CAROUSEL*/
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+
+/*FAB*/
+.fab-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    user-select: none;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+  }
+  .fab-container:hover {
+    height: 100%;
+  }
+  .fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-20vh);
+  }
+  .fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-40vh);
+  }
+  .fab-container:hover .sub-button:nth-child(4) {
+    bottom: 1vh;
+    transform: translateX(-17vh);
+  }
+  
+  .fab-container .fab {
+    position: relative;
+    height: 17vh;
+    width: 17vh;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  .fab-container .fab::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 8vh;
+    width: 7vh;
+    background-color:inherit;
+    border-radius: 0 0 10px 0;
+    z-index: -1;
+  }
+  .fab-container .fab .fab-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .fab-container .sub-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: 0;
+    height: 17vh;
+    width: 17vh;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  .fab-container .sub-button:hover {
+    cursor: pointer;
+  }
+  .fab-container .sub-button .material-icons {
+    padding-top: 6px;
+  }
+  
+  .fab-content img{
+      height: 12vh;
+  }
+  
+  .sub-button:nth-child(3) img {
+      height: 10vh;
+  }
+  
+  
+  
+  .sub-button:nth-child(4) img{
+      height: 8vh !important;
+  }
+  
+  
+  .sub-button:nth-child(4){
+      height: 10vh !important;
+      width: 10vh !important;
+      right: 3vh !important;
+  }
+  
+  .fab-container:hover .sub-button:nth-child(4):hover{
+      background-color: #97cfa9 !important;
+  }
+    
+  
+  .fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: #369656;
+  }
+  
