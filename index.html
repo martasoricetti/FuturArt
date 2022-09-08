@@ -49,6 +49,7 @@
           </div>
         </div>
     </nav>
+    <div id="file">
     <div class="container-fluid">
       <span id="carousel">
         <header>
@@ -96,7 +97,7 @@
       <div class="row clearfix">
         <div class="col-md-9">
           <div class="jumbotron"></div>
-          <div id="file"></div>
+          <div ></div>
         </div>
       </div>	
     </div> <!-- /container -->
@@ -113,12 +114,13 @@
           <span class="material-icons"></span>
         </a>
       </div>
-      <div class="sub-button shadow" data-bs-toggle="popover" title="Pop Art" data-content="Pop Art" onclick="changeTheme(this.id); popTitle()" href="#" id="enable-pop-art">
+      <div class="sub-button shadow" data-bs-toggle="popover" title="Pop Art" data-content="Pop Art" onclick="changeHome(this.id); popTitle()" href="#" id="enable-home-pop-art">
           <span class="material-icons"><img src="icons/pop.png"> </span>
       </div>
-      <div class="sub-button shadow" data-bs-toggle="popover" title="Default" data-content="Default" onclick="changeTheme(this.id)" href="#" tag="link" id="enable-default">
+      <div class="sub-button shadow" data-bs-toggle="popover" title="Default" data-content="Default" onclick="changeHome(this.id)" href="#" tag="link" id="enable-home-default">
             <span class="material-icons"><img src="icons/default-icon.png"></span>
       </div>
+    </div>
     </div>
 
      
@@ -155,7 +157,6 @@
 				url: file,
 				success: function(d) {
 					$('#file').html(d)
-          $('#carousel').remove()
 					$('.show').prop("checked", false)
 				},
 				error: function() {
