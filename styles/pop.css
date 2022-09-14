@@ -1,32 +1,36 @@
+body {
+  background-image: url("images/comics_background.jpg");
+}
 
 #text-content {
     font-family: VTC Letterer Pro;
     font-size: 10pt;  /* For full-size comic books (6.625” x 10.187” trim), most creators use a 9.5 or 10-point size.*/
     text-align: justify;
-    background-image: url("images/comics_background.jpg");
-    background-size: 100% ;
+    background: #fff;
+    width:80%;
 }
 
-body h1, body h3 {
+
+#text-content h1, #text-content h3 {
 	font-family:BadaBoom BB;
 	text-align: center;
 	font-weight: 400;
 	letter-spacing: 4pt;
 }
 
-body h4 {
+#text-content h4 {
     font-family:BadaBoom BB;
     font-weight: 400;
 	letter-spacing: 4pt;
 }
-body h1{
+#text-content h1{
 	font-size: 50pt;
     font-size: 5em;
     font-weight: 900;
     line-height: 1;
 }
 
-body h1:hover{
+#text-content h1:hover{
   animation: text-shadow 1.5s ease-in-out infinite;
 }
 
@@ -64,20 +68,22 @@ body h1:hover{
 }
 
 
-body h3 {
+#text-content h3 {
 	font-size: 35pt;
 }
 
-body h4 {
+#text-content h4 {
     font-size: 20pt;
 }
 
-.indent {
+#text-content {
     text-indent: 2%;
 }
+
+
 #text-content img {
     display: block;
-    width:200vh;
+    width:150vh;
     margin-left: auto; 
     margin-right: auto;
     padding-top: 4%;
