@@ -2,7 +2,6 @@ body {
     font-family: VTC Letterer Pro;
     font-size: 10pt;  /* For full-size comic books (6.625” x 10.187” trim), most creators use a 9.5 or 10-point size.*/
     text-align: justify;
-    background-image: url("images/comics_background.jpg");
     background-size: 100% ;
 }
 
