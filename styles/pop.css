@@ -1,5 +1,6 @@
 body {
   background-image: url("images/comics_background.jpg");
+  background: no-repeat;
 }
 
 #text-content {
@@ -82,12 +83,9 @@ body {
 
 
 #text-content img {
-    display: block;
-    width:150vh;
-    margin-left: auto; 
-    margin-right: auto;
-    padding-top: 4%;
-    padding-bottom: 4%;
+  width: 100%; /* or any custom size */
+  height: 100%; 
+  object-fit: contain;
 }
 
 
