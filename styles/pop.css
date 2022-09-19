@@ -1,7 +1,14 @@
-body {
+
+
+#main {
   background-image: url("images/comics_background.jpg");
-  background: no-repeat;
+  background-size: 100%;
+  cursor:url("images/michey_hand.png") 2 2, auto;
+ 
+ 
 }
+
+
 
 #text-content {
     font-family: VTC Letterer Pro;
@@ -9,6 +16,13 @@ body {
     text-align: justify;
     background: #fff;
     width:80%;
+    padding: 0.5in;
+    margin: 2%;
+    border: 3px solid black;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: scroll;
+
 }
 
 
@@ -29,9 +43,10 @@ body {
     font-size: 5em;
     font-weight: 900;
     line-height: 1;
+    padding-bottom: 1em;
 }
 
-#text-content h1:hover, #text-content h3:hover {
+#text-content h1:hover, #text-content h3:hover, .close:hover {
   animation: text-shadow 1.5s ease-in-out infinite;
 }
 
@@ -86,7 +101,9 @@ body {
   width: 100%; /* or any custom size */
   height: 100%; 
   object-fit: contain;
-  cursor:pointer;
+  cursor: url('images/mickey_pointer.png') 2 2, auto;
+  border: 3px solid black;
+  padding: 1em;
 }
 
 /* The Modal (background) */
@@ -99,16 +116,15 @@ body {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   padding-top: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   margin: 5px auto; /* 15% from the top and centered */
-  border: 1px solid #888;
+  border: 1px solid rgb(104, 103, 103);
   width: 40%; /* Could be more or less, depending on screen size */
 }
 
@@ -118,15 +134,14 @@ body {
   position: absolute;
   right: 25px;
   top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
+  font-size: 50pt;
+  font-weight: 1000;
+  
 }
 
 /* Close button on hover */
 .close:hover, .close:focus{
-  color:  #369656;
-  cursor: pointer;
+  cursor: url('images/mickey_pointer.png') 2 2, auto;
 }
 
 /* Add Zoom Animation */
@@ -152,8 +167,47 @@ body {
 }
 }
 
+.electric-bubble{
+  min-height: 30em;
+  min-width: 69em;
+  background-image: url("images/comic_cloud.png");
+  background-repeat: no-repeat;
+  border: 3px solid black;
+  -webkit-background-size: cover;
+  background-size: contain;
+}
 
 
+.electric-bubble div {
+  min-width: 38em;
+  min-height: 10em;
+  margin-top: 23.5%;
+  margin-bottom: 23.6%;
+  padding-right:15%;
+  padding-left:16%;
+  font-weight: 3000;
+  text-align: center;
+  display: block;
+}
+
+
+#authors {
+  background-image: url("images/yellow_tag.png");
+  background-size: 50em 5em;
+  padding-left: 20em;
+  height: 5em;
+  width:50em;
+  margin-top:-1.5em;
+  object-fit: contain;
+  position: absolute;
+}
+
+#authors p {
+  width:40em;
+  margin-left: -15em;
+  padding-top: 1em;
+
+}
 /*comic cloud */
 .footnote {
 	position: relative;
@@ -231,6 +285,7 @@ footer {
     position: fixed;
     bottom: 5vh;
     right: 5vh;
+    cursor: url('images/mickey_pointer.png') 2 2, auto;
   }
   .fab-container:hover {
     height: 100%;
@@ -286,7 +341,7 @@ footer {
     transition: all 0.3s ease;
   }
   .fab-container .sub-button:hover {
-    cursor: pointer;
+    cursor: url('images/mickey_pointer.png') 2 2, auto;
   }
   .fab-container .sub-button .material-icons {
     padding-top: 6px;
