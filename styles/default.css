@@ -1,8 +1,9 @@
 #text-content {
-    padding: 4%;
-    padding-top: 8%;
     text-align: justify;
     width:80%;
+    padding: 2%;
+    margin: 2%;
+
 }
 
 .indent {
@@ -35,7 +36,7 @@
 .modal-content {
   background-color: #fefefe;
   margin: 5px auto; /* 15% from the top and centered */
-  border: 1px solid #888;
+  border: 1px solid rgb(104, 103, 103);
   width: 40%; /* Could be more or less, depending on screen size */
 }
 
@@ -45,14 +46,14 @@
   position: absolute;
   right: 25px;
   top: 0;
-  color: #000;
-  font-size: 35px;
+  color: #369656;
+  font-size: 50px;
   font-weight: bold;
 }
 
 /* Close button on hover */
 .close:hover, .close:focus{
-  color:  #369656;
+  color:  #1b4a2a;
   cursor: pointer;
 }
 
