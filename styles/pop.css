@@ -1,14 +1,16 @@
 
 .navbar {
-background-image: url("images/clouds.jpg");
+background-image: url("images/eyes.jpg");
+opacity: 0.8;
+background-repeat: no-repeat;
+background-size: cover;
+height: 7em;
 }
 
 #main {
   background-image: url("images/comics_background.jpg");
   background-size: 100%;
   cursor:url("images/michey_hand.png") 2 2, auto;
- 
- 
 }
 
 
