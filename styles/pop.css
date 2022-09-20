@@ -1,4 +1,7 @@
 
+.navbar {
+background-image: url("images/comics_background.jpg");
+}
 
 #main {
   background-image: url("images/comics_background.jpg");
