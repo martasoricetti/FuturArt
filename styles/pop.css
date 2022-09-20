@@ -168,26 +168,32 @@
 }
 
 .electric-bubble{
-  min-height: 30em;
-  min-width: 69em;
+  min-height: 50em;
+  max-height: 50em;
+  min-width:68em;
+  max-width: 68em;
   background-image: url("images/comic_cloud.png");
   background-repeat: no-repeat;
   border: 3px solid black;
   -webkit-background-size: cover;
   background-size: contain;
+  position: relative;
 }
 
 
 .electric-bubble div {
-  min-width: 38em;
-  min-height: 10em;
+  min-width: 70em;
+  max-width: 70em;
+  min-height: 20em;
+  max-height: 20em;
   margin-top: 23.5%;
   margin-bottom: 23.6%;
   padding-right:15%;
-  padding-left:16%;
+  padding-left:13%;
   font-weight: 3000;
   text-align: center;
   display: block;
+  position: absolute;
 }
 
 
@@ -200,6 +206,7 @@
   margin-top:-1.5em;
   object-fit: contain;
   position: absolute;
+  z-index: +1;
 }
 
 #authors p {
