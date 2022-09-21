@@ -3,10 +3,7 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-
-
 
 #main {
   background-image: url("images/comics_background.jpg");
@@ -22,7 +19,6 @@ body {
   background-size: cover;
   height: 7em;
   width: 100%;
-  top:-30em;
   }
 
 .nav-item{
@@ -32,7 +28,6 @@ body {
     font-size: 13pt;
     color: white;
     background: #6225E6;
-    transition: 1s;
     box-shadow: 6px 6px 0 black;
     transform: skewX(-15deg);
 }
