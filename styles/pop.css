@@ -13,7 +13,7 @@ body {
 }
 
 /**NAVBAR**/
-.navbar {
+.navbar, .navbar-expand-lg, .navbar-dark, .bg-dark {
   background-image: url("images/eyes.jpg");
   opacity: 0.8;
   background-repeat: no-repeat;
