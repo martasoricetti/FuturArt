@@ -26,8 +26,10 @@ body {
     margin: 1.5em;
     text-decoration: none;
     font-size: 13pt;
+    font-weight:bold;
+    font-family: VTC Letterer Pro;
     color: white;
-    background: #6225E6;
+    background: #0c2ffb;
     box-shadow: 6px 6px 0 black;
     transform: skewX(-15deg);
 }
@@ -38,7 +40,7 @@ body {
 
 .nav-item:hover{
     transition: 0.5s;
-    box-shadow: 10px 10px 0 #FBC638;
+    box-shadow: 10px 10px 0 #f2f21d;
 }
 
 
@@ -407,12 +409,24 @@ footer {
       right: 3vh !important;
   }
   
-  .fab-container:hover .sub-button:nth-child(4):hover{
-      background-color: #97cfa9 !important;
-  }
     
   
-  .fab-content, .fab-shadow, .sub-button, .fab{
-    background-color: #369656;
+  .sub-button:nth-child(3){
+    background-color: rgb(43, 188, 244);
   }
   
+  .sub-button:nth-child(2){
+    background-color: rgb(253, 0, 109);
+  }
+
+  .sub-button:nth-child(4){
+    background-color: rgb(253, 86, 34);
+  }
+
+  .fab-container .fab{
+    background-color: rgb(0, 197, 38);
+  }
+
+  .sub-button:nth-child(4):hover {
+    background-color: rgb(255, 224, 1);
+  }
