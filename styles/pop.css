@@ -19,6 +19,7 @@ body {
   background-size: cover;
   height: 7em;
   width: 100%;
+  z-index: 1;
   }
 
 .nav-item{
@@ -340,12 +341,12 @@ a {
   color: #333;
 }
 
-a:hover {
+#text-content a:hover {
   color:#0c2ffb;
 }
 
 /*buttons*/
-a{
+#text-content a{
 	font-family: VTC Letterer Pro;
 	font-size:13px;
 	width:50px;
