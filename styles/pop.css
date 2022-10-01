@@ -59,6 +59,48 @@ body {
 
 }
 
+#introduction p, #seventh_section p, #fourteenth_section p {
+  border: 7px dotted #0c2ffb;
+  padding: 1em;
+  margin-top:1em;
+}
+
+#first_section p, #eight_section p{
+  border: 7px dotted #fb203b;
+  padding: 1em;
+  margin-top:1em;
+}
+
+#second_section p, #ninth_section{
+  border: 7px dotted #fefc4b;
+  padding: 1em;
+  margin-top:1em;
+}
+
+#third_section p, #tenth_section {
+  border: 7px dotted rgb(0, 197, 38);
+  padding: 1em;
+  margin-top:1em;
+}
+
+#fourth_section p, #eleventh_section p {
+  border: 7px dotted  rgb(253, 0, 109);
+  padding: 1em;
+  margin-top:1em;
+}
+
+#fifth_section p, #twelfth_section p {
+  border: 7px dotted  rgb(253, 86, 34);
+  padding: 1em;
+  margin-top:1em;
+}
+
+#sixth_section p, #thirteenth_section p {
+  border: 7px dotted  rgb(43, 188, 244);
+  padding: 1em;
+  margin-top:1em;
+}
+
 
 #text-content h1, #text-content h3 {
 	font-family:BadaBoom BB;
@@ -80,7 +122,7 @@ body {
     padding-bottom: 1em;
 }
 
-#text-content h1:hover, #text-content h3:hover, .close:hover {
+#text-content h1:hover, #text-content h3:hover, #text-content h4:hover,  .close:hover {
   animation: text-shadow 1.5s ease-in-out infinite;
 }
 
@@ -233,9 +275,9 @@ body {
 
 #authors {
   background-image: url("images/yellow_tag.png");
-  background-size: 50em 5em;
+  background-size: 50em 7em;
   padding-left: 20em;
-  height: 5em;
+  height: 7em;
   width:50em;
   margin-top:-1.5em;
   object-fit: contain;
@@ -247,29 +289,28 @@ body {
   width:40em;
   margin-left: -15em;
   padding-top: 1em;
+  line-height: 2.2em;
 
 }
 /*comic cloud */
 .footnote {
-	position: relative;
-	width: 10%;
+  position: relative;
 	text-align: center;
-	line-height: 1.4em;
+	line-height: 2em;
 	margin: 40px auto;
 	background-color: #fff;
-	border: 8px solid #333;
+	border: 7px solid #333;
 	border-radius: 30px;
 	padding: 20px;
-	font-size: large;
 }
-span.footnote {
-	width: 300px;
+
+section.footnote {
 	border-radius: 200px;
 	padding: 30px;
 }
 
-span.footnote:before,
-span.footnote:after {
+section.footnote:before,
+section.footnote:after {
 	content: ' ';
 	position: absolute;
 	width: 0;
@@ -279,13 +320,13 @@ span.footnote:after {
 	width: 40px;
 	height: 40px;
 	background-color: #fff;
-	border: 8px solid #333;
+	border: 7px solid #333;
 	-webkit-border-radius: 28px;
 	-moz-border-radius: 28px;
 	border-radius: 28px;
 }
 
-span.footnote:after {
+section.footnote:after {
 	width: 20px;
 	height: 20px;
 	left: 5px;
@@ -294,25 +335,30 @@ span.footnote:after {
 	-moz-border-radius: 18px;
 	border-radius: 18px;
 }
-
-/*buttons*/
-sup button {
-	font-family: VTC Letterer Pro;
-	font-size:25px;
-	width:50px;
-	height: 20px;
-	background-color: yellow;
-	box-shadow: 5px 5px #333;
-	cursor: pointer;
-
+a {
+  text-decoration: none;
+  color: #333;
 }
 
+a:hover {
+  color:#0c2ffb;
+}
 
-/*footer*/
-
-footer {
-    background-color: #669999;
-    text-align: center;
+/*buttons*/
+a{
+	font-family: VTC Letterer Pro;
+	font-size:13px;
+	width:50px;
+	height: 20px;
+  padding-left:5px;
+  padding-right: 5px;
+  margin:5px;
+	background-color: yellow;
+	box-shadow: 3px 3px #333;
+	cursor: pointer;
+  border: 2px solid #333;
+  text-decoration: none;
+  color:#333;
 }
 
 
